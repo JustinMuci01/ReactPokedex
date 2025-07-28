@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "PokemonFont";
+    src: url('./fonts/PokemonGb-RAeo.ttf') ;
+    font-weight: 600;
+
+}
+
+
+body{
+    background-color: rgb(113, 187, 113);
+}
+img{
+    background-color: lightgreen;
+    border: 3px solid rgb(113, 187, 113);
+    cursor: pointer;
+}
+
+.CardList{ 
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+h2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h1{
+    font-family: "PokemonFont";
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.PokemonCard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width:110px;
+    margin: 2px;
+    height:95px;
+    padding-bottom: 60px;
+    background-color: rgba(255, 0, 0, 0.596);
+    border: 3px solid red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: "PokemonFont";
+    width:100%;
+    height:100%;
+    font-size: .7rem;
+    font-weight: 10;
+    margin-top: 0px;
+    margin-bottom:2px;
+    text-wrap: wrap;
+}
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.generationBar{
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+h2
+{
+    font-family: "PokemonFont"; 
+    font-size: 1.1rem;
+}
+
+.loadingText{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.incDecButtons{
+    cursor:pointer;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight:bold;
+}

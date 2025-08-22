@@ -166,3 +166,8 @@ h2
     font: "PokemonFont";
     padding-top: 2px;
 }
+
+.speaker{
+    width:30px;
+    height:auto;
+}

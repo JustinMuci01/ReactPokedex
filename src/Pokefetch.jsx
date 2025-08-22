@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import star from "./img/star.png";
+import speaker from "./img/speaker.png";
 import pokeball from "./img/pokeball.png";
 
 function Pokefetch(){
@@ -37,7 +38,7 @@ function Pokefetch(){
                     photo: data.sprites.front_default,
                     shinyPhoto: data.sprites.front_shiny,
                     type: data.types,
-                    cry: data.cries.legacy
+                    cry: data.cries.latest
                 };
                 pokemonList.push(newPokemon);
             }
@@ -135,6 +136,11 @@ function Pokefetch(){
         setEnhancedPoke();
     }
 
+    function playCry(url)
+    {
+        const audio = new Audio(url)
+        audio.play();
+    }
     return(
         <>
         <head>
@@ -184,6 +190,7 @@ function Pokefetch(){
             <p className = "descText">HABITAT: {enhancedPoke.habitat}</p>
             <p className = "descText">HAPPINESS: {enhancedPoke.happiness}</p>
             <p className = "descText">CATCH RATE: {enhancedPoke.cap_rate}</p>
+            <img className = "speaker" onClick = {() =>playCry(enhancedPoke.cry)} src={speaker} />
             </>
             } 
 

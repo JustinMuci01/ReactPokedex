@@ -62,8 +62,17 @@ function Pokefetch(){
                     }
 
                 const data = await response.json();
+                let textString;
+                for (let i=0;i<data.flavor_text_entries.length;i++)
+                {
+                    if (data.flavor_text_entries[i].language.name === "en")
+                    {
+                        textString = data.flavor_text_entries[i].flavor_text;
+                        break;
+                    }
+                }
                 const newInfo = {
-                    text: data.flavor_text_entries[0].flavor_text,
+                    text: textString,
                     habitat: data.habitat?.name ?? "N/A",
                     happiness: data.base_happiness,
                     cap_rate: data.capture_rate,

@@ -40,7 +40,8 @@ h1{
     align-items: center;
     align-content: center;
     text-align: center;
-    width:110px;
+    word-break: break-all;
+    width:120px;
     margin: 2px;
     height:95px;
     padding-bottom: 60px;
@@ -92,4 +93,76 @@ h2
     padding-left: 20px;
     padding-right: 20px;
     font-weight:bold;
+}
+
+.ShinyButton
+{
+    display:flex;
+    background-color: rgb(113, 187, 113);
+    color:rgb(185, 158, 1);
+    margin-left:auto;
+    width: 5%;
+    height: auto; 
+}
+
+.ListEnhance
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.displayEnhancedView
+{
+    width:fit-content;
+    background-color: rgba(255, 0, 0, 0.596);
+    border: 3px solid red;
+    height:fit-content; 
+    padding:20px;
+    align-items: center;
+    text-align: center;
+}
+
+.enhancedImage
+{
+    width:150px;
+    height:auto;
+}
+
+.cancelButton
+{
+    display: flex;
+    font-size: 1.5rem;
+    background-color: rgb(113, 187, 113);
+    font-family: "PokemonFont";
+    margin-left: auto;
+    cursor:pointer;
+    padding:3px;
+    padding-left: 5px;
+}
+
+.cancelButton:hover{
+    background-color: lightgreen;
+}
+
+.descText{
+    display:flex;
+    width: 250px;
+    height:auto;
+    color:black;
+    align-items: center;
+    justify-content: center;
+    margin-right:auto;
+    background-color: lightgreen;
+    word-break:normal;
+    padding: 5px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.descTitle{
+    color:black;
+    background-color: lightgreen;
+    margin-bottom: 0px;
+    font: "PokemonFont";
+    padding-top: 2px;
 }
